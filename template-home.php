@@ -15,7 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="full-width-page-wrapper">
 
-	<div class="<?php echo esc_html( $container ); ?>" id="content">
+	<div class="fluid-container" id="content">
 
 		<div class="row">
 
@@ -23,18 +23,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<main class="site-main" id="main" role="main">
 
-					<div class="who-we-are home-top-section">
-						<h2>Who We <span>Are</span></h2>
-						<p>
-							Democratic Socialists are radical democrats who believe 
-							that all aspects of the economy and society should be run 
-							democratically to meet human needs, not to heap profits on 
-							the few. We are a political and activist organization, 
-							committed to educate, agitate and advocate for social and 
-							economic justice – for a world free of prejudice, 
-							discrimination and exploitation, where all people of good 
-							will are free to realize their fullest potential.
-						</p>
+					<div class="who-we-are home-top-section row">
+						<div class="col-md-8">
+							<h2>Who We <span>Are</span></h2>
+							<p>
+								Democratic Socialists are radical democrats who believe 
+								that all aspects of the economy and society should be run 
+								democratically to meet human needs, not to heap profits on 
+								the few. We are a political and activist organization, 
+								committed to educate, agitate and advocate for social and 
+								economic justice – for a world free of prejudice, 
+								discrimination and exploitation, where all people of good 
+								will are free to realize their fullest potential.
+							</p>
+						</div>
+
+						<div class="col-md-4 rose">
+
+						</div>
 					</div>
 
 					<div class="national home-middle-section row">

@@ -1,11 +1,28 @@
 @import "../variables";
 
 .home-top-section {
+	height: 33vh;
 
+	.col-md-8 {
+		padding: 20px;
+	}
+
+	.rose {
+		background-color: $red;
+		background-image: image-url("rose-overlay.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
 
 .home-middle-section {
 	background-color: $black;
+	height: 33vh;
+	padding: 20px;
+
+	h2 {
+		color: #fff;
+	}
 
 	p {
 		color: #fff;
@@ -13,5 +30,18 @@
 }
 
 .home-bottom-section {
+	height: 33vh;
 
+	.col-md-6 {
+		padding: 20px;
+
+	}
+
+	.col-md-6:first-child {
+		background-color: $red;
+
+		h2 {
+			color: #fff;
+		}
+	}
 }

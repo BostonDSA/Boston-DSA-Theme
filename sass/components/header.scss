@@ -1,0 +1,25 @@
+@import "../variables";
+
+.wrapper-navbar {
+	position: fixed;
+}
+
+nav.navbar {
+	background-color: transparent;
+
+	&.top {
+		background-color: #fff;
+	}
+
+	.fluid-container {
+		width: 100%;
+	}
+}
+
+#main-menu {
+	float: right;
+
+	a {
+		color: $black;
+	}
+}
