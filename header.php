@@ -21,6 +21,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type='text/javascript' src='/wp-content/themes/Boston-DSA-Theme/javascript/scripts.js'></script>
 </head>
 
 <body <?php body_class(); ?>>

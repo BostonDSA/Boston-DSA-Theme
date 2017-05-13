@@ -88,28 +88,81 @@ a, btn, .btn {
 /* line 3, ../sass/components/header.scss */
 .wrapper-navbar {
   position: fixed;
+  width: 100%;
 }
 
-/* line 7, ../sass/components/header.scss */
+/* line 8, ../sass/components/header.scss */
+#wrapper-navbar {
+  background-color: #fff;
+  z-index: 9;
+}
+/* line 12, ../sass/components/header.scss */
+#wrapper-navbar.top {
+  background-color: transparent;
+}
+
+/* line 17, ../sass/components/header.scss */
 nav.navbar {
   background-color: transparent;
 }
-/* line 10, ../sass/components/header.scss */
+/* line 20, ../sass/components/header.scss */
 nav.navbar.top {
   background-color: #fff;
 }
-/* line 14, ../sass/components/header.scss */
+/* line 24, ../sass/components/header.scss */
 nav.navbar .fluid-container {
   width: 100%;
 }
 
-/* line 19, ../sass/components/header.scss */
-#main-menu {
-  float: right;
+/* line 29, ../sass/components/header.scss */
+.navbar-brand {
+  background-image: url('../img/logo.png?1493602781');
+  background-size: cover;
+  text-indent: -9999px;
+  width: 323px;
+  height: 72px;
 }
-/* line 22, ../sass/components/header.scss */
-#main-menu a {
+
+/* line 37, ../sass/components/header.scss */
+#navbarNavDropdown {
+  float: right;
+  width: auto;
+  background-color: #fff;
+}
+/* line 42, ../sass/components/header.scss */
+#navbarNavDropdown a {
   color: #231f20;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 20px;
+  transition: .4s all ease-in-out;
+}
+/* line 49, ../sass/components/header.scss */
+#navbarNavDropdown a:hover {
+  color: #ec1f27;
+}
+/* line 54, ../sass/components/header.scss */
+#navbarNavDropdown.top {
+  background-color: transparent;
+}
+/* line 57, ../sass/components/header.scss */
+#navbarNavDropdown.top a {
+  color: #fff;
+}
+/* line 60, ../sass/components/header.scss */
+#navbarNavDropdown.top a:hover {
+  color: #ec1f27;
+}
+
+/* line 3, ../sass/components/footer.scss */
+#wrapper-footer {
+  background-color: #231f20;
+  height: 115px;
+}
+
+/* line 9, ../sass/components/footer.scss */
+#footerNavbarNavDropdown a {
+  color: #fff;
 }
 
 /* line 3, ../sass/components/typography.scss */
@@ -155,6 +208,20 @@ span {
   font-size: inherit;
 }
 
+/* line 1, ../sass/components/hero.scss */
+.hero {
+  height: 500px;
+  background-image: url('../img/hero.jpg?1493602781');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 1, ../sass/components/overrides.scss */
+.wrapper {
+  padding: 0;
+}
+
 /* Pages */
 /* line 3, ../sass/pages/homepage.scss */
 .home-top-section {
@@ -162,9 +229,12 @@ span {
 }
 /* line 6, ../sass/pages/homepage.scss */
 .home-top-section .col-md-8 {
-  padding: 20px;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-/* line 10, ../sass/pages/homepage.scss */
+/* line 13, ../sass/pages/homepage.scss */
 .home-top-section .rose {
   background-color: #ec1f27;
   background-image: url('../img/rose-overlay.svg?1493602781');
@@ -172,34 +242,53 @@ span {
   background-size: cover;
 }
 
-/* line 18, ../sass/pages/homepage.scss */
+/* line 21, ../sass/pages/homepage.scss */
 .home-middle-section {
   background-color: #231f20;
   height: 33vh;
   padding: 20px;
 }
-/* line 23, ../sass/pages/homepage.scss */
+/* line 26, ../sass/pages/homepage.scss */
 .home-middle-section h2 {
   color: #fff;
 }
-/* line 27, ../sass/pages/homepage.scss */
+/* line 30, ../sass/pages/homepage.scss */
 .home-middle-section p {
   color: #fff;
 }
+/* line 34, ../sass/pages/homepage.scss */
+.home-middle-section .col-md-9 {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 41, ../sass/pages/homepage.scss */
+.home-middle-section .btn {
+  background-color: #fff;
+  color: #ec1f27;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 5px 15px;
+  top: 50%;
+  position: relative;
+  margin-top: -25px;
+  width: 100%;
+}
 
-/* line 32, ../sass/pages/homepage.scss */
+/* line 54, ../sass/pages/homepage.scss */
 .home-bottom-section {
   height: 33vh;
 }
-/* line 35, ../sass/pages/homepage.scss */
+/* line 57, ../sass/pages/homepage.scss */
 .home-bottom-section .col-md-6 {
   padding: 20px;
 }
-/* line 40, ../sass/pages/homepage.scss */
+/* line 62, ../sass/pages/homepage.scss */
 .home-bottom-section .col-md-6:first-child {
   background-color: #ec1f27;
 }
-/* line 43, ../sass/pages/homepage.scss */
+/* line 65, ../sass/pages/homepage.scss */
 .home-bottom-section .col-md-6:first-child h2 {
   color: #fff;
 }

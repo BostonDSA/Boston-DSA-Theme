@@ -11,7 +11,9 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class=""
+<div class="hero">
+
+</div>
 
 <div class="wrapper" id="full-width-page-wrapper">
 
@@ -58,6 +60,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="feeds home-bottom-section row">
 						<div class="col-md-6">
 							<h2>Hear From <span>Us</span></h2>
+							
 						</div>
 						<div class="col-md-6">
 							<h2>From Our Writers</h2>

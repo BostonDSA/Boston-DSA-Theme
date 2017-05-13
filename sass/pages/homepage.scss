@@ -4,7 +4,10 @@
 	height: 33vh;
 
 	.col-md-8 {
-		padding: 20px;
+		padding: 45px;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
 	}
 
 	.rose {
@@ -26,6 +29,25 @@
 
 	p {
 		color: #fff;
+	}
+
+	.col-md-9 {
+		padding: 45px;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+	}
+
+	.btn {
+		background-color: #fff;
+		color: $red;
+		text-transform: uppercase;
+		font-size: 2rem;
+		padding: 5px 15px;
+		top: 50%;
+	    position: relative;
+	    margin-top: -25px;
+	    width: 100%;
 	}
 }
 
