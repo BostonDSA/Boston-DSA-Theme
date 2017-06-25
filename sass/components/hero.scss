@@ -1,7 +1,21 @@
+@import "../variables";
+
 .hero {
-	height: 500px;
-	background-image: image-url("hero.jpg");
+	height: 300px;
+	background-image: image-url("rose-overlay.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-color: $red;
+	position: relative;
+}
+
+.hero h1 {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	font-size: 7.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
 }

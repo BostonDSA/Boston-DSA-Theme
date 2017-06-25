@@ -2,11 +2,56 @@
 
 #wrapper-footer {
 	background-color: $black;
-	height: 115px;
 }
 
 #footerNavbarNavDropdown {
-	a{
+	a {
 		color: #fff;
+	}
+}
+
+.site-info {
+	overflow: hidden;
+}
+
+.copyright {
+	color: #fff;
+	float: left;
+	padding: 25px;
+}
+
+.footer-nav {
+	flex-direction: row;
+	float: right;
+	padding: 25px;
+
+	li {
+		margin-left: 25px;
+	}
+}
+
+.social-media-links {
+	padding: 30px 15px 0;
+
+	.social-media-links-inner {
+		float: right;
+		border-bottom: 4px solid #fff;
+		padding-left: 15px;
+	}
+
+	h3 {
+		display: inline-block;
+		color: #fff;
+		margin-right: 15px;
+	}
+
+	a {
+		color: #fff;
+		display: inline-block;
+		margin-right: 10px;
+
+		&:hover {
+			color: $red;
+		}
 	}
 }

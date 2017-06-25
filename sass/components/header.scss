@@ -1,5 +1,14 @@
 @import "../variables";
 
+.navbar-toggler {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background-color: #555;
+    height: 44px;
+    width: 44px;
+}
+
 .wrapper-navbar {
 	position: fixed;
 	width: 100%;
@@ -8,9 +17,20 @@
 #wrapper-navbar {
 	background-color: #fff;
 	z-index: 9;
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.3);
+	transition: .4s all ease-in-out;
 
 	&.top {
 		background-color: transparent;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+
+		.navbar-brand {
+			background-image: image-url("logo.png");
+		}
 	}
 }
 
@@ -26,40 +46,75 @@ nav.navbar {
 	}
 }
 
+.navbar-nav {
+	margin: 0;
+}
+
 .navbar-brand {
-	background-image: image-url("logo.png");
-	background-size: cover;
-	text-indent: -9999px;
-	width: 323px;
-	height: 72px;
+	background-image: image-url("logo-black.png");
+	background-size: 100%;
+    text-indent: -9999px;
+    width: 268px;
+    height: 66px;
+    transition: .4s all ease-in-out;
+    background-repeat: no-repeat;
+    /* padding-top: 25px; */
+    background-position: center center;
 }
 
 #navbarNavDropdown {
 	float: right;
 	width: auto;
-	background-color: #fff;
+
+	li.menu-item {
+		margin-bottom: 0;
+	}
 
 	a {
 		color: $black;
-		font-size: 3rem;
+		font-size: 2rem;
 		font-weight: bold;
 		padding: 20px;
 		transition: .4s all ease-in-out;
 
 		&:hover {
 			color: $red;
+			text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
 		}
 	}
 
-	&.top {
-		background-color: transparent;
+	a.nav-link.btn {
+		padding: 5px 10px;
+	    margin-top: 10px;
+	    color: #fff !important;
+	}
 
+	&.show,
+	&.collapsing {
+		margin-top: 60px;
+	}
+
+	&.top {
 		a {
 			color: #fff;
 
 			&:hover {
-				color: $red;
+				color: #000;
 			}
 		}
+	}
+}
+
+.home #navbarNavDropdown.top a:hover {
+	color: $red;
+}
+
+@media (max-width: 995px) {
+	#wrapper-navbar {
+		background-color: $red !important;
+	}
+
+	.navbar-brand {
+		background-image: image-url("logo-black.png") !important;
 	}
 }

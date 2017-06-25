@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+	$('.rose').parallax({
+		imageSrc: '/wp-content/themes/Boston-DSA-Theme/img/rose-overlay.svg',
+		bleed: 30
+	});
+
+	$('#menu-item-27 a').addClass("btn btn-primary")
+
 	$("#navbarNavDropdown, #wrapper-navbar").addClass("top");
 
 	$(window).scroll(function (event) {

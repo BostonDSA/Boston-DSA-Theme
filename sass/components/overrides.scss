@@ -1,3 +1,25 @@
+@import "../variables";
+
 .wrapper {
 	padding: 0;
+}
+
+.parallax-mirror {
+	background-color: $red;
+}
+
+/* Boot Strap Buttons */
+.btn-primary.btn {
+	background-color: $red;
+	border-color: $red;
+
+	&:hover {
+		background-color: $black;
+		color: #fff;
+	}
+}
+
+/* Contact Form */
+.wpcf7 {
+	max-width: 100%;
 }

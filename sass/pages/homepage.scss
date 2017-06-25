@@ -1,27 +1,36 @@
 @import "../variables";
 
-.home-top-section {
-	height: 33vh;
+.home.hero {
+	background-image: image-url("hero.jpg");
+	height: 400px;
 
+	@media (min-width: $desktop) {
+		height: 500px;
+	}
+}
+
+.home-top-section {
 	.col-md-8 {
-		padding: 45px;
+		padding: 30px;
 		display: flex;
     	flex-direction: column;
     	justify-content: center;
 	}
 
 	.rose {
-		background-color: $red;
-		background-image: image-url("rose-overlay.svg");
-		background-repeat: no-repeat;
-		background-size: cover;
+		height: 300px;
+	}
+
+	@media (min-width: 995px) {
+		.col-md-8 {
+			padding: 60px;
+		}
 	}
 }
 
 .home-middle-section {
 	background-color: $black;
-	height: 33vh;
-	padding: 20px;
+	height: 300px;
 
 	h2 {
 		color: #fff;
@@ -31,8 +40,7 @@
 		color: #fff;
 	}
 
-	.col-md-9 {
-		padding: 45px;
+	.col-md-8 {
 		display: flex;
     	flex-direction: column;
     	justify-content: center;
@@ -40,22 +48,38 @@
 
 	.btn {
 		background-color: #fff;
+		border-color: #fff;
 		color: $red;
 		text-transform: uppercase;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		padding: 5px 15px;
 		top: 50%;
-	    position: relative;
+	    position: absolute;
 	    margin-top: -25px;
 	    width: 100%;
+	    font-weight: bold;
+
+	    &:hover {
+	    	background-color: #d3d2d2;
+	    	color: $red;
+	    }
+	}
+
+	@media (min-width: 995px) {
+		.col-md-8 {
+			padding: 60px;
+		}
 	}
 }
 
 .home-bottom-section {
-	height: 33vh;
 
 	.col-md-6 {
-		padding: 20px;
+		padding: 30px;
+
+		@media (min-width: 995px) {
+			padding: 60px;
+		}
 
 	}
 
@@ -65,5 +89,13 @@
 		h2 {
 			color: #fff;
 		}
+	}
+
+	h2 {
+		margin-bottom: 30px;
+	}
+
+	@media (min-width: 995px) {
+		height: 400px;
 	}
 }

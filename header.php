@@ -22,7 +22,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/wp-content/themes/Boston-DSA-Theme/javascript/parallax.js"></script>
 	<script type='text/javascript' src='/wp-content/themes/Boston-DSA-Theme/javascript/scripts.js'></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
 </head>
 
 <body <?php body_class(); ?>>
