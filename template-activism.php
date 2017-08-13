@@ -44,7 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 											of sub-working groups, which focus on immigration, legislative work, 
 											ecosocialism, prison abolition and labor.
 										</p>
-										<a href="">placeholder@bostondsa.org</a>
+										<a href="mailto:coalition@bostondsa.org">coalition@bostondsa.org</a>
 									</div>
 									<div class="working-group">
 										<h3><span class="fa fa-globe"></span>Immigration</h3>
@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 											in the name of dignity, respect, and political protection for the 
 											(im)migrant working class.
 										</p>
-										<a href="">placeholder@bostondsa.org</a>
+										<a href="mailto:immigration@bostondsa.org">immigration@bostondsa.org</a>
 									</div>
 									<div class="working-group">
 										<h3><span class="fa fa-wrench"></span>Labor</h3>
@@ -68,7 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 											to be a democratic socialist in the labor movement, and to work 
 											with new DSAers to help form unions in their workplaces.
 										</p>
-										<a href="">placeholder@bostondsa.org</a>
+										<a href="mailto:labor@bostondsa.org">labor@bostondsa.org</a>
 									</div>
 									<div class="working-group">
 										<h3><span class="fa fa-check"></span>Electoral</h3>
@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 											through endorsing candidates, volunteering for campaigns, and 
 											training on skills and issues.
 										</p>
-										<a href="">placeholder@bostondsa.org</a>
+										<a href="mailto:electoral@bostondsa.org">electoral@bostondsa.org</a>
 									</div>
 									<div class="working-group">
 										<h3><span class="fa fa-leaf"></span>Eco-socialism</h3>
@@ -89,7 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 											key allies; 2) recognize and challenge the capitalist origins 
 											of our modern environmental crisis.
 										</p>
-										<a href="">placeholder@bostondsa.org</a>
+										<a href="mailto:ecosocialism@bostondsa.org">ecosocialism@bostondsa.org</a>
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -102,9 +102,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 											We will collaborate with a coalition of community and abolition 
 											groups to work towards this future.
 										</p>
-										<a href="">placeholder@bostondsa.org</a>
+										<a href="mailto:prisonabolition@bostondsa.org">prisonabolition@bostondsa.org</a>
 									</div>
-									<div class="working-group">
+									<!--<div class="working-group">
 										<h3><span class="fa fa-file-text-o"></span>Legislative</h3>
 										<p>
 											The goal of the legislative sub-working group is to work to 
@@ -113,8 +113,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 											coalition of groups and bring a socialist analysis to their 
 											campaigns.
 										</p>
-										<a href="">placeholder@bostondsa.org</a>
-									</div>
+										<a href="">prisonabolition@bostondsa.org</a>
+									</div>-->
 									<div class="working-group">
 										<h3><span class="fa fa-graduation-cap"></span>Political Education</h3>
 										<p>
@@ -124,7 +124,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 											on DSA’s vision of a socialist future, our approach to achieving, 
 											and our perspectives on relevant issues.
 										</p>
-										<a href="">placeholder@bostondsa.org</a>
+										<a href="mailto:education@bostondsa.org">education@bostondsa.org</a>
 									</div>
 									<div class="working-group">
 										<h3><span class="fa fa-terminal"></span>Tech</h3>
@@ -139,7 +139,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 											labor, and are essential to robust socialist economic and 
 											social policy.
 										</p>
-										<a href="">placeholder@bostondsa.org</a>
+										<a href="mailto:tech@bostondsa.org">tech@bostondsa.org</a>
 									</div>
 									<div class="working-group">
 										<h3><span class="fa fa-bullhorn"></span>Protest Team</h3>
@@ -153,7 +153,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 											groups and educating people about the socialist 
 											theory of demonstrations.
 										</p>
-										<a href="">placeholder@bostondsa.org</a>
+										<a href="mailto:protest@bostondsa.org">protest@bostondsa.org</a>
 									</div>
 								</div>
 							</div>
@@ -175,4 +175,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- Wrapper end -->
 
+<div class="bottom-nav row">
+	<div class="col-md-10 main-content offset-md-1">
+		<h3>Interested in one of these working groups?</h3>
+		<p>Check if they have any events planned.</p>
+		<a href="/events" class="btn btn-primary">See our events</a>
+	</div>
+</div>
 <?php get_footer(); ?>

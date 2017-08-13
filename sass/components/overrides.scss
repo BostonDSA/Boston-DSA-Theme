@@ -23,3 +23,69 @@
 .wpcf7 {
 	max-width: 100%;
 }
+
+
+/* Facebook Events plugin */
+.fb-event-calendar .clndr .event-listing .event-item .event-item-location, .fb-event-calendar .clndr .event-listing .event-item .event-item-time, .widget .fb-event-calendar .clndr .event-listing .event-item .event-item-location, .widget .fb-event-calendar .clndr .event-listing .event-item .event-item-time {
+	font-size: 1.6rem !important;
+	margin: 15px 0;
+}
+
+.event-item-name a {
+	font-size: 1.9rem;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 15px;
+	color: $red !important;
+}
+
+.facebook-events-popup .modal-content .event-description {
+	background-color: #fff !important;
+	color: #000 !important;
+	margin: 0 !important;
+	padding: 15px;
+}
+
+.facebook-events-popup .modal-content .event-title {
+	background-color: #eee !important;
+	color: #000;
+}
+
+.facebook-events-popup .modal-content .event-description a, .facebook-events-popup .modal-content .event-title a {
+	color: $red !important;
+}
+
+/*Facebook feed plugin */
+.fts-jal-fb-vid-wrap,
+.fts-jal-fb-header,
+.fts-powered-by-text-popup a.fts-powered-by-text,
+.fts-jal-fb-user-thumb,
+.fts-share-wrap,
+.fts-jal-fb-picture {
+	display: none !important;
+}
+
+a {
+	color: $red;
+}
+
+.fts-jal-fb-user-name,
+.fts-jal-fb-post-time {
+	color: $black;
+}
+
+.fts-jal-fb-description-wrap {
+	max-width: 100%;
+}
+
+/* Contact Form */
+.btn-outline-primary, .wpcf7 input[type=submit] {
+	background-color: $red !important;
+	color: #fff !important;
+	font-size: 1.9rem;
+	border-color: transparent !important;
+}
+
+.form-control:focus, .wpcf7 .wpcf7-validation-errors:focus, .wpcf7 input[type=color]:focus, .wpcf7 input[type=date]:focus, .wpcf7 input[type=datetime-local]:focus, .wpcf7 input[type=datetime]:focus, .wpcf7 input[type=email]:focus, .wpcf7 input[type=file]:focus, .wpcf7 input[type=month]:focus, .wpcf7 input[type=number]:focus, .wpcf7 input[type=range]:focus, .wpcf7 input[type=search]:focus, .wpcf7 input[type=submit]:focus, .wpcf7 input[type=tel]:focus, .wpcf7 input[type=text]:focus, .wpcf7 input[type=time]:focus, .wpcf7 input[type=url]:focus, .wpcf7 input[type=week]:focus, .wpcf7 select:focus, .wpcf7 textarea:focus {
+	border-color: #000 !important;
+}

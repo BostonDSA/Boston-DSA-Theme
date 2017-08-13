@@ -45,4 +45,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- Wrapper end -->
 
+<div class="bottom-nav row">
+	<div class="col-md-10 main-content offset-md-1">
+		<h3><?php the_field('header'); ?></h3>
+		<p><?php the_field('body'); ?></p>
+		<a href="<?php the_field('link_url'); ?>" class="btn btn-primary"><?php the_field('link_text'); ?></a>
+	</div>
+</div>
+
 <?php get_footer(); ?>

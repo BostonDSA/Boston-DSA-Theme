@@ -17,6 +17,10 @@ a, btn, .btn {
 	cursor: pointer;
 }
 
+a:focus, a:hover {
+	color: #000;
+}
+
 ol, ul {
 	list-style: disc;
 	padding-left: 30px;
@@ -28,8 +32,11 @@ li {
 }
 
 address {
-	margin: 30px 0;
+	margin: 15px 0;
 	line-height: 1.4;
+	padding: 15px;
+	background-color: #eee;
+	display: inline-block;
 }
 
 hr {

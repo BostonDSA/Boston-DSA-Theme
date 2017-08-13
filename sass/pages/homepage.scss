@@ -1,12 +1,25 @@
 @import "../variables";
 
 .home.hero {
-	background-image: image-url("hero.jpg");
+	background-image: image-url("boston-dsa-hero.svg");
 	height: 400px;
+	background-position: center calc(100% + 20px);
 
 	@media (min-width: $desktop) {
 		height: 500px;
 	}
+
+	li a {
+		color: #000;
+	}
+}
+
+.home #navbarNavDropdown.top a {
+	color: $black;
+}
+
+.home #wrapper-navbar.top .navbar-brand {
+	background-image: image-url("logo-black.png")
 }
 
 .home-top-section {
@@ -18,7 +31,13 @@
 	}
 
 	.rose {
-		height: 300px;
+		height: 320px;
+	}
+
+	@media (max-width: 480px) {
+		.rose {
+			background-color: $red;
+		}
 	}
 
 	@media (min-width: 995px) {
@@ -26,6 +45,7 @@
 			padding: 60px;
 		}
 	}
+
 }
 
 .home-middle-section {
@@ -56,7 +76,7 @@
 		top: 50%;
 	    position: absolute;
 	    margin-top: -25px;
-	    width: 100%;
+	    width: 93%;
 	    font-weight: bold;
 
 	    &:hover {
@@ -84,18 +104,14 @@
 	}
 
 	.col-md-6:first-child {
-		background-color: $red;
-
-		h2 {
-			color: #fff;
-		}
+		background-color: #eeeeee;
 	}
 
 	h2 {
 		margin-bottom: 30px;
 	}
 
-	@media (min-width: 995px) {
-		height: 400px;
+	h4 {
+		font-weight: bold;
 	}
 }
