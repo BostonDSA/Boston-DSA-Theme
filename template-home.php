@@ -78,7 +78,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 							        echo $excerpt;
 							    }
 							?>
-
+							<p class="see-more">
+								<a href="/press-releases">See all posts...</a>
+							</p>
 
 						</div>
 					</div>
