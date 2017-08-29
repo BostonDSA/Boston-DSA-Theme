@@ -63,18 +63,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="feeds home-bottom-section row">
 						<div class="col-md-6">
 							<h2>Hear From <span>Us</span></h2>
-							<?php echo do_shortcode("[fts_facebook type=page id=282734585192522 posts=3 posts_displayed=page_only]"); ?>
+							<?php echo do_shortcode("[fts_facebook type=page id=282734585192522 posts=2 posts_displayed=page_only]"); ?>
 						</div>
 						<div class="col-md-6">
 							<h2>From Our Writers</h2>
 							<?php
-							    $recent_posts = wp_get_recent_posts();
+								$args = array(
+										'numberposts' => 1,
+									);
+							    $recent_posts = wp_get_recent_posts($args);
 							    foreach( $recent_posts as $recent ){
 							        echo '<h4>' . $recent["post_title"] . '</h4>';
 							        $excerpt = '<p>' . wp_trim_words( $recent['post_content'], 55, '...</p> <a class="btn btn-primary" href="' . get_permalink($recent["ID"]) .'">Read More</a>'); // $excerpt contains the excerpt of the concerned post
 							        echo $excerpt;
 							    }
 							?>
+
+
 						</div>
 					</div>
 

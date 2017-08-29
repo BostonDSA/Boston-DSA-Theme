@@ -3,7 +3,7 @@
 .home.hero {
 	background-image: image-url("boston-dsa-hero.svg");
 	height: 400px;
-	background-position: center calc(100% + 20px);
+	background-position: center calc(100% + 40px);
 
 	@media (min-width: $desktop) {
 		height: 500px;
