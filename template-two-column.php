@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Basic Page Template
+ * Template Name: Two Column Page Template
  *
- * Template for displaying a basic page.
+ * Template for displaying two column pages.
  *
  * @package understrap
  */
@@ -28,10 +28,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="row">
 						<div class="col-md-10 main-content offset-md-1">
 							<?php while ( have_posts() ) : the_post(); ?>
-
-								<p class="intro"><?php the_field('intro'); ?></p>
+								<p class="intro">
+									<?php the_field('intro'); ?>
+								</p>
 
 								<p><?php the_field('sub_intro'); ?></p>
+
+								<hr>
+								<div class="row">
+									<div class="col-md-6">
+										<?php the_field('first_column'); ?>
+									</div>
+									<div class="col-md-6">
+										<?php the_field('second_column'); ?>
+									</div>
+								</div>
+							
 
 								<?php get_template_part( 'loop-templates/content', 'page' ); ?>
 
@@ -56,5 +68,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a href="<?php the_field('link_url'); ?>" class="btn btn-primary"><?php the_field('link_text'); ?></a>
 	</div>
 </div>
-
 <?php get_footer(); ?>
