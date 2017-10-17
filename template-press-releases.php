@@ -11,7 +11,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="hero basic-hero">
-<h1><?php wp_title(''); ?></h1>
+<h1><?php the_title(''); ?></h1>
 </div>
 
 <div class="wrapper basic-page" id="full-width-page-wrapper">
