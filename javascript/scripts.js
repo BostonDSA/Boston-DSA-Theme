@@ -6,7 +6,7 @@ $(document).ready(function() {
 		bleed: 30
 	});
 
-	$('#menu-item-27 a').addClass("btn btn-primary")
+	$('#menu-item-27 a').addClass("btn btn-primary");
 
 	$("#navbarNavDropdown, #wrapper-navbar").addClass("top");
 
@@ -23,4 +23,4 @@ $(document).ready(function() {
 			$("#navbarNavDropdown, #wrapper-navbar").removeClass("top");
 		}
 	});
-})
+});
