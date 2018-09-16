@@ -1,0 +1,39 @@
+version: '3'
+services:
+  mysql:
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    image: mysql
+    volumes:
+      - mysql:/var/lib/mysql
+    restart: always
+  wordpress:
+    depends_on:
+      - mysql
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+    image: wordpress
+    ports:
+      - 8000:80
+    restart: always
+    volumes:
+      - wordpress:/var/www/html
+  wp:
+    environment:
+      BOSTON_DSA_THEME: https://github.com/BostonDSA/Boston-DSA-Theme/archive/master.zip
+      WP_URL: localhost:8000
+      WP_TITLE: BostonDSA
+      WP_ADMIN_USER: admin
+      WP_ADMIN_PASSOWRD: admin
+      WP_ADMIN_EMAIL: admin@bostondsa.org
+    image: wordpress:cli
+    volumes:
+      - wordpress:/var/www/html
+volumes:
+  mysql:
+  wordpress:
