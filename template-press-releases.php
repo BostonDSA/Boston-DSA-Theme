@@ -10,7 +10,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="hero basic-hero">
+<div class="hero basic-hero jumbotron">
 <h1><?php the_title(''); ?></h1>
 </div>
 
