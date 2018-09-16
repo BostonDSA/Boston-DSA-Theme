@@ -50,46 +50,8 @@
 
 .home-middle-section {
 	background-color: $black;
-	height: 300px;
-
-	h2 {
-		color: #fff;
-	}
-
-	p {
-		color: #fff;
-	}
-
-	.col-md-8 {
-		display: flex;
-    	flex-direction: column;
-    	justify-content: center;
-	}
-
-	.btn {
-		background-color: #fff;
-		border-color: #fff;
-		color: $red;
-		text-transform: uppercase;
-		font-size: 1.8rem;
-		padding: 5px 15px;
-		top: 50%;
-	    position: absolute;
-	    margin-top: -25px;
-	    width: 93%;
-	    font-weight: bold;
-
-	    &:hover {
-	    	background-color: #d3d2d2;
-	    	color: $red;
-	    }
-	}
-
-	@media (min-width: 995px) {
-		.col-md-8 {
-			padding: 60px;
-		}
-	}
+	padding: 3em 0 5em 0;
+	display: flex;
 }
 
 .home-bottom-section {

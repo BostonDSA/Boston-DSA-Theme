@@ -1,6 +1,10 @@
 .hero.basic-hero {
 	background-size: 50%;
     background-position: 100% 100px;
+
+    .lead {
+    	font-size: 2rem;
+    }
 }
 
 header.page-header {
@@ -16,7 +20,20 @@ header.page-header {
 	padding: 60px 40px;
 }
 
-.intro {
+.intro,
+.intro p {
 	margin-bottom: 30px;
 	font-size: 2rem;
+}
+
+aside.main .card-block {
+
+	.grid .nav-item {
+		width: 25%;
+		text-align: center;
+	}
+
+	.nav-link {
+		font-size: 1.3rem;
+	}
 }

@@ -1,6 +1,11 @@
 html {
 	font-size: 10px;
 	font-family: "Manifold DSA", Helvetica, san-serif;
+	overflow-x: hidden;
+}
+
+body {
+	position: relative;
 }
 
 @media (min-width: 1200px) {
