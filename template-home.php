@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<main class="site-main" id="main" role="main">
 
-					<div class="who-we-are home-top-section row">
+					<section class="who-we-are home-top-section row">
 						<div class="col-md-8">
 							<h2>Who We <span>Are</span></h2>
 							<p>
@@ -43,30 +43,51 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="col-md-4 rose">
 
 						</div>
-					</div>
+					</section>
 
-					<div class="national home-middle-section row">
-						<div class="col-md-8">
-							<h2>National <span>DSA</span></h2>
-							<p>
-								DSA is the largest socialist organization in the United States today. Our work is driven by our chapters across the nation. We seek to make democratic socialism a reality in all of our communities.
-							</p>
-						</div>
-						<div class="col-md-3">
-							<a class="btn btn-primary" href="/join">Become a Member</a>
-						</div>
-						<div class="col-md-1">
+					<section class="national home-middle-section row">
+						<div class="col-md-6 offset-md-3">
+							<h2 class="text-white text-center">Next Event</h2>
+							
+							<?php $proj_events = tribe_get_events( array(
+								'posts_per_page' => 1,
+								'eventDisplay' => 'list' // only upcoming
+							), true ); ?>
+							<?php if( $proj_events->have_posts() ) :
+							?>
+							<article class="card">
+									<?php while( $proj_events->have_posts() ) : $proj_events->the_post(); ?>
+										<?php $event_id = get_the_ID(); ?>
+										<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
+										<div class="card-block">
 
-						</div>
-					</div>
+											<h3 class="card-title mb-4 mt-0"><?php the_title(); ?></h3>
+											<div class="card-subtitle mb-2 text-muted"><span class="dashicons dashicons-clock"></span> <?php echo tribe_get_start_date( null, true, 'g:ia, F j' ); ?></div>
+											<p>
+												<?php echo tribe_events_get_the_excerpt(); ?>
+											</p>
 
-					<div class="feeds home-bottom-section row">
+											<a class="btn btn-primary" href="<?php the_permalink(); ?>">Check it out <span class="dashicons dashicons-arrow-right-alt"></span></a>
+										</div>
+									<?php endwhile; ?>
+							</article>
+							<?php else: ?>
+								<p>There are currently no upcoming events for <?php the_title(); ?>.</p>
+							</div>
+							<?php endif; wp_reset_postdata(); ?>
+						</div>
+					</section>
+
+					<section class="feeds home-bottom-section row">
 						<div class="col-md-6">
 							<h2>Hear From <span>Us</span></h2>
-							<?php echo do_shortcode("[fts_facebook type=page id=282734585192522 posts=2 posts_displayed=page_only]"); ?>
+							<!--<?php echo do_shortcode("[fts_facebook type=page id=282734585192522 posts=2 posts_displayed=page_only]"); ?>-->
+							<p>
+								Facebook feeds have been temporarily disabled! We'll be back shortly.
+							</p>
 						</div>
 						<div class="col-md-6">
-							<h2>From Our Writers</h2>
+							<h2>News &amp; Announcements</h2>
 							<?php
 								$args = array(
 										'numberposts' => 1,
@@ -83,7 +104,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</p>
 
 						</div>
-					</div>
+					</section>
 
 				</main><!-- #main -->
 
