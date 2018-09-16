@@ -14,6 +14,13 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 add_filter( 'wp_mail_content_type', 'set_html_content_type' );
 
+
+ require_once(get_stylesheet_directory() . '/class-wp-bootstrap-navwalker.php');
+
+register_nav_menus( array(
+  'primary' => __( 'Primary Menu', 'UNDERSTRAP' ),
+) );
+
 /**
  * Set the HTML content type
  */
@@ -62,7 +69,7 @@ EOT;
 <p>Dear {$userMeta['first_name'][0]},</p>
 <p>Welcome to the Boston chapter of the Democratic Socialists of America! As a member, you are provided with an account for accessing member’s only information on our website, <a href="https://www.bostondsa.org">bostondsa.org.</a></p>
 
-<p>Once logged in, check out the <a href="https://www.bostondsa.org/membership-documents">membership documents page</a>.</p>
+<p>Once logged in, check out the <a href="https://www.bostondsa.org/members-page">membership documents page</a>.</p>
 
 <p><a href="$regUrl">Click here to set your password.</a></p>
 EOT;
