@@ -11,8 +11,10 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="hero basic-hero">
-<h1><?php the_title(''); ?></h1>
+<div class="hero basic-hero jumbotron">
+	<div class="container">
+		<h1><?php the_title(''); ?></h1>
+	</div>
 </div>
 
 <div class="wrapper basic-page" id="full-width-page-wrapper">
