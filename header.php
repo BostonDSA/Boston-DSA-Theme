@@ -12,6 +12,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104453122-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-104453122-1');
+	</script>
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,10 +34,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/wp-content/themes/Boston-DSA-Theme/javascript/parallax.js"></script>
 	<script type='text/javascript' src='/wp-content/themes/Boston-DSA-Theme/javascript/scripts.js'></script>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-spy="scroll" data-target="#main-sidebar">
 
 <div class="hfeed site" id="page">
 
@@ -72,7 +82,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
 						'menu_class'      => 'navbar-nav',
-						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
