@@ -6,6 +6,11 @@ $(document).ready(function() {
 		bleed: 30
 	});
 
+	$('.bg-grey-rose').parallax({
+		imageSrc: '/wp-content/themes/Boston-DSA-Theme/img/rose-grey.svg',
+		background: transparent
+	})
+
 	$('#menu-item-27 a').addClass("btn btn-primary");
 
 	$("#navbarNavDropdown, #wrapper-navbar").addClass("top");
@@ -13,6 +18,7 @@ $(document).ready(function() {
 	if(scroll > 0) {
 		$("#navbarNavDropdown, #wrapper-navbar").removeClass("top");
 	}
+
 
 	$(window).scroll(function (event) {
 	    scroll = $(window).scrollTop();
