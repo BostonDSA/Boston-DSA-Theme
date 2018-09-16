@@ -1,0 +1,24 @@
+.bg-red-gradient,
+.bg-danger-gradient {
+	background: #ec1f27; /* Old browsers */
+	background: -moz-linear-gradient(top, #ec1f27 0%, darken($red, 10%) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ec1f27 0%,darken($red, 10%) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ec1f27 0%,darken($red, 10%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.bg-warning-gradient,
+.bg-yellow-gradient {
+	background: $yellow; /* Old browsers */
+	background: -moz-linear-gradient(top, $yellow 0%, darken($yellow, 5%) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $yellow 0%,darken($yellow, 5%) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $yellow 0%,darken($yellow, 5%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.flip-horizontal {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
