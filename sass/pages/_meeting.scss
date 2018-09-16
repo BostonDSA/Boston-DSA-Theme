@@ -1,0 +1,137 @@
+.meeting .hero h1 {
+	max-width: 60%;
+}
+
+.meeting h2 {
+	font-size: 3rem;
+}
+
+.meeting aside h2 {
+	font-size: 2.4rem;
+}
+
+.meeting aside .card {
+	background-color: rgba(255, 255, 255, .96);
+}
+
+.general_meeting-template-default .parallax-mirror {
+	background: transparent;
+}
+
+.meeting-schedule,
+.meeting-announcement,
+.meeting .intro,
+.meeting-agenda {
+	width: 100vw;
+
+
+	table {
+		margin-bottom: 0;
+
+		tr:first-child td {
+			border-color: transparent;
+		}
+	}
+
+	@media (min-width: 768px) {
+		padding-right: 30%;
+	}
+}
+
+.meeting-schedule,
+.meeting-agenda,
+.meeting-announcement {
+	h2 {
+		display: flex;
+		align-items: center;
+
+		> span {
+			white-space: nowrap;
+		}
+	}
+}
+
+.meeting-schedule {
+	h2 {
+		text-shadow: 2px 2px 0px rgba(darken(#f2dd1c, 10%),0.9);
+	}
+
+	.schedule-container {
+		padding: 20px;
+		background-color: lighten($yellow, 60%);
+	}
+}
+
+.meeting-announcement {
+	padding-bottom: 30vh;
+	position: relative;
+
+	.card {
+		border-color: $red;
+	}
+
+	.card-header {
+		background-color: darken($red, 10%);
+		color: #fff;
+
+		h2 {
+			text-shadow: 2px 2px 0px rgba(darken($red, 30%),0.9)
+		}
+	}
+
+	.card-block {
+		background-color: lighten($red, 45%);
+	}
+
+	> .fa {
+		position: absolute;
+		left: 50%;
+		margin-left: -13px;
+		font-size: 64px;
+		bottom: 30px;
+		text-shadow: 2px 2px 0px rgba(darken($red, 30%), 0.9);
+	}
+}
+
+.meeting .table td, .meeting .table th {
+	border-color: darken(#f2dd1c, 10%);
+}
+
+.holder {
+  /* Clip edges, as some of the lines don't terminate nicely. */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    margin-bottom: -5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.smallLine {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+}
+
+.smallLine1 {
+    background: linear-gradient(45deg, transparent, transparent 49%, $red 49%, transparent 51%);
+}
+.smallLine2 {
+    background: linear-gradient(-45deg, transparent, transparent 49%, $red 49%, transparent 51%);
+}
+
+.meeting-announcement {
+	.smallLine1 {
+   	 background: linear-gradient(45deg, transparent, transparent 49%, white 49%, transparent 51%);
+	}
+
+	.smallLine2 {
+	    background: linear-gradient(-45deg, transparent, transparent 49%, white 49%, transparent 51%);
+	}
+}
+
+.smallLine,
+.meeting-announcement .smallLine {
+    background-size: 10px 10px;
+}
