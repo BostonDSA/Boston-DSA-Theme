@@ -81,10 +81,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<section class="feeds home-bottom-section row">
 						<div class="col-md-6">
 							<h2>Hear From <span>Us</span></h2>
+							<p>Posts from the Boston DSA Political Education Working Group (PEWG).</p>
 							<!--<?php echo do_shortcode("[fts_facebook type=page id=282734585192522 posts=2 posts_displayed=page_only]"); ?>-->
-							<p>
-								Facebook feeds have been temporarily disabled! We'll be back shortly.
-							</p>
+							<?php
+								$args = array(
+										'post_type' => 'political_education',
+										'numberposts' => 2,
+									);
+							    $recent_posts = wp_get_recent_posts($args);
+							    foreach( $recent_posts as $recent ){
+							        echo '<h4>' . $recent["post_title"] . '</h4>';
+							        $excerpt = '<p>' . wp_trim_words( $recent['post_content'], 30, '...</p> <a class="btn btn-primary" href="' . get_permalink($recent["ID"]) .'">Read More</a> <hr>'); // $excerpt contains the excerpt of the concerned post
+							        echo $excerpt;
+							    }
+							?>
+
+							<a href="https://bostonpewg.org/">View the Boston PEWG Blog</a>
 						</div>
 						<div class="col-md-6">
 							<h2>News &amp; Announcements</h2>
