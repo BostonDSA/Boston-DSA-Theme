@@ -17,20 +17,26 @@ services:
       WORDPRESS_DB_HOST: mysql:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_TABLE_PREFIX: 0c1_
+      WORDPRESS_DEBUG: 0
     image: wordpress
     ports:
       - 8000:80
     restart: always
     volumes:
       - wordpress:/var/www/html
+      # Bind mount this repo into the container
+      # Note: this is invisible to the wp-cli container
+      - ..:/var/www/html/wp-content/themes/boston-dsa-theme
   wp:
     environment:
-      BOSTON_DSA_THEME: https://github.com/BostonDSA/Boston-DSA-Theme/archive/master.zip
       WP_URL: localhost:8000
       WP_TITLE: BostonDSA
       WP_ADMIN_USER: admin
-      WP_ADMIN_PASSOWRD: admin
+      WP_ADMIN_PASSWORD: admin
       WP_ADMIN_EMAIL: admin@bostondsa.org
+      # ommited plugins: wps-hide-login
+      WP_PLUGINS: application-passwords advanced-custom-fields contact-form-7 custom-post-type-ui document-gallery event-tickets jwt-authentication-for-wp-rest-api private-content-login-redirect redirection the-events-calendar user-shortcodes-plus wp-fastest-cache wp-rss-aggregator
     image: wordpress:cli
     volumes:
       - wordpress:/var/www/html
