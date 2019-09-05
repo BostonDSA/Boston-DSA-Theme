@@ -6,7 +6,7 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
-    image: mysql
+    image: mysql:5.7
     volumes:
       - mysql:/var/lib/mysql
     restart: always
