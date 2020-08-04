@@ -7,8 +7,7 @@ $(document).ready(function() {
 	});
 
 	$('.bg-grey-rose').parallax({
-		imageSrc: '/wp-content/themes/Boston-DSA-Theme/img/rose-grey.svg',
-		background: transparent
+		imageSrc: '/wp-content/themes/Boston-DSA-Theme/img/rose-grey.svg'
 	})
 
 	$('#menu-item-27 a').addClass("btn btn-primary");

@@ -10,18 +10,12 @@
 	font-size: 2.4rem;
 }
 
-.meeting aside .card {
-	background-color: rgba(255, 255, 255, .96);
-}
-
 .general_meeting-template-default .parallax-mirror {
 	background: transparent;
 }
 
 .meeting-schedule,
-.meeting-announcement,
-.meeting .intro,
-.meeting-agenda {
+.meeting-announcement {
 	width: 100vw;
 
 
@@ -34,7 +28,7 @@
 	}
 
 	@media (min-width: 768px) {
-		padding-right: 30%;
+		padding-right: 40%;
 	}
 }
 
@@ -63,9 +57,6 @@
 }
 
 .meeting-announcement {
-	padding-bottom: 30vh;
-	position: relative;
-
 	.card {
 		border-color: $red;
 	}
@@ -82,15 +73,6 @@
 	.card-block {
 		background-color: lighten($red, 45%);
 	}
-
-	> .fa {
-		position: absolute;
-		left: 50%;
-		margin-left: -13px;
-		font-size: 64px;
-		bottom: 30px;
-		text-shadow: 2px 2px 0px rgba(darken($red, 30%), 0.9);
-	}
 }
 
 .meeting .table td, .meeting .table th {
@@ -105,7 +87,6 @@
     height: 5px;
     margin-bottom: -5px;
     margin-left: 10px;
-    margin-right: 10px;
 }
 
 .smallLine {
@@ -125,7 +106,6 @@
 	.smallLine1 {
    	 background: linear-gradient(45deg, transparent, transparent 49%, white 49%, transparent 51%);
 	}
-
 	.smallLine2 {
 	    background: linear-gradient(-45deg, transparent, transparent 49%, white 49%, transparent 51%);
 	}

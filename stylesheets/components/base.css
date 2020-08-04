@@ -1,0 +1,15 @@
+/* line 1, ../../sass/components/base.scss */
+html {
+  font-size: 10px;
+  font-family: "Manifold DSA", Helvetica, san-serif;
+}
+
+/* line 6, ../../sass/components/base.scss */
+p, span, div, a, button, .btn {
+  font-size: 1.6rem;
+}
+
+/* line 10, ../../sass/components/base.scss */
+a, btn, .btn {
+  cursor: pointer;
+}

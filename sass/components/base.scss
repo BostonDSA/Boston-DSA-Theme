@@ -1,0 +1,39 @@
+html {
+	font-size: 10px;
+	font-family: "Manifold DSA", Helvetica, san-serif;
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+p, span, div, a, button, .btn {
+	font-size: 1.6rem;
+}
+
+a, btn, .btn {
+	cursor: pointer;
+}
+
+ol, ul {
+	list-style: disc;
+	padding-left: 30px;
+	margin: 15px 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+address {
+	margin: 30px 0;
+	line-height: 1.4;
+	padding: 15px;
+	background-color: #eee;
+}
+
+hr {
+	margin: 60px 0;
+}

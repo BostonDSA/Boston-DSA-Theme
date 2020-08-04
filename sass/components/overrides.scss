@@ -1,0 +1,62 @@
+@import "../variables";
+
+.wrapper {
+	padding: 0;
+}
+
+.parallax-mirror {
+	background-color: $red;
+}
+
+/* Boot Strap Buttons */
+.btn-primary.btn {
+	background-color: $red;
+	border-color: $red;
+
+	&:hover {
+		background-color: $black;
+		color: #fff;
+	}
+}
+
+/* Contact Form */
+.wpcf7 {
+	max-width: 100%;
+}
+
+
+/* Facebook Events plugin */
+.fb-event-calendar .clndr .event-listing .event-item .event-item-location, .fb-event-calendar .clndr .event-listing .event-item .event-item-time, .widget .fb-event-calendar .clndr .event-listing .event-item .event-item-location, .widget .fb-event-calendar .clndr .event-listing .event-item .event-item-time {
+	font-size: 1.6rem !important;
+	margin: 15px 0;
+}
+
+.event-item-name a {
+	font-size: 1.9rem;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 15px;
+	color: $red !important;
+}
+
+.event-description {
+	background-color: #fff;
+}
+
+/*Facebook feed plugin */
+.fts-jal-fb-vid-wrap,
+.fts-jal-fb-header,
+.fts-powered-by-text-popup a.fts-powered-by-text,
+.fts-jal-fb-user-thumb,
+.fts-share-wrap {
+	display: none !important;
+}
+
+a {
+	color: $red;
+}
+
+.fts-jal-fb-user-name,
+.fts-jal-fb-post-time {
+	color: $black;
+}

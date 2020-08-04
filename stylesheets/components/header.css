@@ -1,0 +1,69 @@
+/* Colors */
+/* line 3, ../../sass/components/header.scss */
+.wrapper-navbar {
+  position: fixed;
+  width: 100%;
+}
+
+/* line 8, ../../sass/components/header.scss */
+#wrapper-navbar {
+  background-color: #fff;
+  z-index: 9;
+}
+/* line 12, ../../sass/components/header.scss */
+#wrapper-navbar.top {
+  background-color: transparent;
+}
+
+/* line 17, ../../sass/components/header.scss */
+nav.navbar {
+  background-color: transparent;
+}
+/* line 20, ../../sass/components/header.scss */
+nav.navbar.top {
+  background-color: #fff;
+}
+/* line 24, ../../sass/components/header.scss */
+nav.navbar .fluid-container {
+  width: 100%;
+}
+
+/* line 29, ../../sass/components/header.scss */
+.navbar-brand {
+  background-image: url('../img/logo.png?1493602781');
+  background-size: cover;
+  text-indent: -9999px;
+  width: 323px;
+  height: 72px;
+}
+
+/* line 37, ../../sass/components/header.scss */
+#navbarNavDropdown {
+  float: right;
+  width: auto;
+  background-color: #fff;
+}
+/* line 42, ../../sass/components/header.scss */
+#navbarNavDropdown a {
+  color: #231f20;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 20px;
+  transition: .4s all ease-in-out;
+}
+/* line 49, ../../sass/components/header.scss */
+#navbarNavDropdown a:hover {
+  color: #ec1f27;
+}
+/* line 54, ../../sass/components/header.scss */
+#navbarNavDropdown.top {
+  background-color: transparent;
+}
+/* line 57, ../../sass/components/header.scss */
+#navbarNavDropdown.top a {
+  color: #fff;
+}
+/* line 60, ../../sass/components/header.scss */
+#navbarNavDropdown.top a:hover {
+  color: #ec1f27;
+}

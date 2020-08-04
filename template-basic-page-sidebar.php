@@ -48,7 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<aside class="main col">
 				<section class="card">
-					<div class="card-block">
+					<div class="card-body">
 						<h2 class="card-title text-center pt-2">Amendments</h2>
 						<div id="main-sidebar">
 							<ul class="nav grid d-flex flex-wrap">

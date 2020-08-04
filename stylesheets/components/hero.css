@@ -1,0 +1,8 @@
+/* line 1, ../../sass/components/hero.scss */
+.hero {
+  height: 500px;
+  background-image: url('../img/hero.jpg?1493602781');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
