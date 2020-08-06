@@ -1,14 +1,31 @@
 @import "../variables";
 
 .home.hero {
+	align-items: flex-end;
+	background-color: #DDDCDC;
 	background-image: image-url("boston-dsa-hero.svg");
-	height: 400px;
-	background-position: center calc(100% + 40px);
+	display: flex;
+	height: 500px;
+	background-position: 60% calc(100% + 30px);
 
-	@media (min-width: $desktop) {
-		height: 500px;
+	.card {
+		border-top: 3px solid $yellow;
+		border-radius: 1px;
+		box-shadow: 0 0 30px rgba(#000, .1);
+		margin-bottom: 1rem;
 	}
 
+	.card-body {
+		padding: 2rem;
+	}
+
+	h1 {
+		bottom: 0;
+		color: #000;
+		font-size: 3rem;
+		margin-top: 0;
+	}
+	
 	li a {
 		color: #000;
 	}

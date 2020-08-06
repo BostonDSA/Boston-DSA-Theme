@@ -4,9 +4,8 @@ aside.main {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	aside.main {
-		padding: 0;
 		position: fixed;
 		right: 30px;
 		width: 30%;

@@ -13,12 +13,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hero basic-hero jumbotron">
 <div class="container">
-	<?php if( tribe_is_month() && !is_tax() ) { // The Main Calendar Page
-    	echo '<h1>Events Calendar</h1>';
-    } else {
-    ?>
     <h1><?php the_title(''); ?></h1>
-    <?php } ?>
 	<?php the_field('hero')?>
 	</div>
 </div>

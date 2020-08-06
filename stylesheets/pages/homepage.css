@@ -1,0 +1,70 @@
+/* Colors */
+/* line 3, ../../sass/pages/homepage.scss */
+.home-top-section {
+  height: 33vh;
+}
+/* line 6, ../../sass/pages/homepage.scss */
+.home-top-section .col-md-8 {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 13, ../../sass/pages/homepage.scss */
+.home-top-section .rose {
+  background-color: #ec1f27;
+  background-image: url('../img/rose-overlay.svg?1493602781');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 21, ../../sass/pages/homepage.scss */
+.home-middle-section {
+  background-color: #231f20;
+  height: 33vh;
+  padding: 20px;
+}
+/* line 26, ../../sass/pages/homepage.scss */
+.home-middle-section h2 {
+  color: #fff;
+}
+/* line 30, ../../sass/pages/homepage.scss */
+.home-middle-section p {
+  color: #fff;
+}
+/* line 34, ../../sass/pages/homepage.scss */
+.home-middle-section .col-md-9 {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 41, ../../sass/pages/homepage.scss */
+.home-middle-section .btn {
+  background-color: #fff;
+  color: #ec1f27;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 5px 15px;
+  top: 50%;
+  position: relative;
+  margin-top: -25px;
+  width: 100%;
+}
+
+/* line 54, ../../sass/pages/homepage.scss */
+.home-bottom-section {
+  height: 33vh;
+}
+/* line 57, ../../sass/pages/homepage.scss */
+.home-bottom-section .col-md-6 {
+  padding: 20px;
+}
+/* line 62, ../../sass/pages/homepage.scss */
+.home-bottom-section .col-md-6:first-child {
+  background-color: #ec1f27;
+}
+/* line 65, ../../sass/pages/homepage.scss */
+.home-bottom-section .col-md-6:first-child h2 {
+  color: #fff;
+}

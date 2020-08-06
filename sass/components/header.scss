@@ -1,0 +1,65 @@
+@import "../variables";
+
+.wrapper-navbar {
+	position: fixed;
+	width: 100%;
+}
+
+#wrapper-navbar {
+	background-color: #fff;
+	z-index: 9;
+
+	&.top {
+		background-color: transparent;
+	}
+}
+
+nav.navbar {
+	background-color: transparent;
+
+	&.top {
+		background-color: #fff;
+	}
+
+	.fluid-container {
+		width: 100%;
+	}
+}
+
+.navbar-brand {
+	background-image: image-url("logo.png");
+	background-size: cover;
+	text-indent: -9999px;
+	width: 323px;
+	height: 72px;
+}
+
+#navbarNavDropdown {
+	float: right;
+	width: auto;
+	background-color: #fff;
+
+	a {
+		color: $black;
+		font-size: 3rem;
+		font-weight: bold;
+		padding: 20px;
+		transition: .4s all ease-in-out;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	&.top {
+		background-color: transparent;
+
+		a {
+			color: #fff;
+
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+}

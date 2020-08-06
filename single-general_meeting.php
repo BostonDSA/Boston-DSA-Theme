@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<aside class="main col-lg-3">
 				<section class="card">
-					<div class="card-block">
+					<div class="card-body">
 						<h2 class="card-title text-center pt-2">Important Info</h2>
 						<div id="main-sidebar">
 							<h3>Date, Time &amp; Location</h3>
@@ -100,7 +100,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								    <div class="smallLine smallLine2"></div>
 								</div></h2>
 								</header>
-								<div class="card-block">
+								<div class="card-body">
 									<?php the_field('more_announcements'); ?>
 								</div>
 							</div>

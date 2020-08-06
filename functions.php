@@ -69,7 +69,7 @@ EOT;
 <p>Dear {$userMeta['first_name'][0]},</p>
 <p>Welcome to the Boston chapter of the Democratic Socialists of America! As a member, you are provided with an account for accessing member’s only information on our website, <a href="https://www.bostondsa.org">bostondsa.org.</a></p>
 
-<p>Once logged in, check out the <a href="https://www.bostondsa.org/members-page">membership documents page</a>.</p>
+<p>Once logged in, check out the <a href="https://www.bostondsa.org/membership-documents">membership documents page</a>.</p>
 
 <p><a href="$regUrl">Click here to set your password.</a></p>
 EOT;

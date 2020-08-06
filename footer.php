@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12">
 
 				<footer class="site-footer" id="colophon">
-					<div class="policy-menu pull-left">
+					<div class="policy-menu">
 						<?php wp_nav_menu(
 							array(
 								'menu' 			  => 'policies',
@@ -55,12 +55,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="social-media-links clearfix">
 						<div class="social-media-links-inner">
 							<h3>Follow Us</h3>
-							<a href="https://www.facebook.com/BostonDSA/"><span class="fa fa-facebook-official fa-2x"></span></a>
-							<a href="https://twitter.com/boston_dsa"><span class="fa fa-twitter-square fa-2x"></span></a>
+							<a href="https://www.facebook.com/BostonDSA/"><span class="fab fa-facebook fa-2x"></span></a>
+							<a href="https://twitter.com/boston_dsa"><span class="fab fa-twitter fa-2x"></span></a>
 						</div>
 					</div>
 					<div class="site-info">
-						<p class="copyright">© 2018 Boston Democratic Socialists of America.</p>
 						<?php wp_nav_menu(
 							array(
 								'theme_location'  => 'primary',
@@ -72,6 +71,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 								'walker'          => new WP_Bootstrap_Navwalker(),
 							)
 						); ?>
+						<p class="copyright">
+							© <?php echo date('Y') ?> Boston Democratic Socialists of America.<br>
+							<small>made with <i class="far fa-hammer text-danger"></i> by BDSA</small>
+						</p>
 					</div><!-- .site-info -->
 				</footer><!-- #colophon -->
 

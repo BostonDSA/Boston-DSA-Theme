@@ -1,0 +1,11 @@
+/* Colors */
+/* line 3, ../../sass/components/footer.scss */
+#wrapper-footer {
+  background-color: #231f20;
+  height: 115px;
+}
+
+/* line 9, ../../sass/components/footer.scss */
+#footerNavbarNavDropdown a {
+  color: #fff;
+}

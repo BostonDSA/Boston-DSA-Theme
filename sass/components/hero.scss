@@ -1,0 +1,16 @@
+@import "../variables";
+
+.hero {
+	height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: $red;
+	position: relative;
+}
+
+.hero h1 {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+}

@@ -25,27 +25,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<main class="site-main" id="main" role="main">
 					<div class="row">
 						<div class="col-md-10 main-content offset-md-1">
-							<?php the_content(); ?>
-							<p class="intro">
-								Below are posts from the Boston Political Education Working Group.
-							</p>
-
 							<?php
 					          $args = array(
-					            'post_type' => 'political_education',
+					            'post_type' => 'post',
 					          );
 					        
 					          $blogposts = new WP_Query($args);
 					          while ( $blogposts->have_posts() ) : $blogposts->the_post(); 
 					      ?>
-								<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+								<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 								<p>
 								<?php echo wp_trim_words( get_the_content(), 40, '...' ); ?>
 								</p>
 
-								<a href="<?php $link = the_permalink(); $perma_link = substr($link, 47) ?>" class="btn btn-primary">Read</a>
-
 								<hr>
+
 
 							<?php endwhile; ?>
 						</div>
