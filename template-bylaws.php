@@ -65,6 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<li class="nav-item"><a class="nav-link" href="#art-11">XI</a></li>
 								<li class="nav-item"><a class="nav-link" href="#art-12">XII</a></li>
 								<li class="nav-item"><a class="nav-link" href="#art-13">XIII</a></li>
+								<li class="nav-item"><a class="nav-link" href="#art-14">XIV</a></li>
 							</ul>
 						</div>
 					</div>

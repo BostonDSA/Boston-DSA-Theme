@@ -57,6 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<h3>Follow Us</h3>
 							<a href="https://www.facebook.com/BostonDSA/"><span class="fab fa-facebook fa-2x"></span></a>
 							<a href="https://twitter.com/boston_dsa"><span class="fab fa-twitter fa-2x"></span></a>
+							<a href="https://www.instagram.com/boston_dsa/"><span class="fab fa-instagram fa-2x"></span></a>
 						</div>
 					</div>
 					<div class="site-info">
